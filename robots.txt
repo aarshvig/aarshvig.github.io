@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://aarshvig.github.io/sitemap.xml
+Sitemap: aarshvig.github.io/sitemap.xml
