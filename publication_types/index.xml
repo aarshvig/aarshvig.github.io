@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publication_types | Aarshvi Gajjar</title>
-    <link>aarshvig.github.io/publication_types/</link>
-      <atom:link href="aarshvig.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://aarshvig.github.io/publication_types/</link>
+      <atom:link href="https://aarshvig.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <description>Publication_types</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>/aarshvig.github.io/images/icon_hubdaf781b8cf5dc1798efeb325ebd726c_79104_512x512_fill_lanczos_center_2.png</url>
+      <url>https://aarshvig.github.io/images/icon_hubdaf781b8cf5dc1798efeb325ebd726c_79104_512x512_fill_lanczos_center_2.png</url>
       <title>Publication_types</title>
-      <link>aarshvig.github.io/publication_types/</link>
+      <link>https://aarshvig.github.io/publication_types/</link>
     </image>
     
   </channel>
