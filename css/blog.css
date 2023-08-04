@@ -50,7 +50,7 @@ h1 {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   border-bottom: none;
-  font-size: 12px;
+  font-size: 15px;
 }
 .nav a:hover {
   font-weight: bold;
@@ -80,7 +80,7 @@ font-family: Georgia, serif;}
 font-family: Georgia, serif;
 }
 .front-matter .bylines .byline h3 {
-  font-size: 9px;
+  font-size: 15px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
 }
