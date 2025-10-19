@@ -1,6 +1,7 @@
 html {
   font-family: Georgia, serif;
-  color: rgba(0, 0, 0, 0.8);
+  /*color: rgba(0, 0, 0, 0.8);*/
+  color:#000000;
   line-height: 1.5em;
   font-size: 16.22px;
   -ms-text-size-adjust: 100%;
@@ -17,7 +18,7 @@ body .content {
 }
 a {
   /*color: rgba(0, 0, 0, 0.8);*/
-  color: #526f8a;
+  color: #425d78;
   text-decoration: none;
 }
 a:hover {
@@ -173,33 +174,33 @@ font-family: Georgia, serif;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.7);
   font-size: 12px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   margin-top: 4px;
   margin-bottom: 4px;
 }
 #blog .post-title {
   display: inline-block;
-  font-weight: bold;
+  /*font-weight: bold;*/
   margin-bottom: 0;
 }
 #blog .post-title a {
-  font-size: 18px;
+  /*font-size: 18px;*/
   text-decoration: none;
 }
 #blog .post-title a:hover {
   text-decoration: underline;
   /*color: #536872;*/
-  color: #3f576b;
+  color: #24313d;
 }
 
 #blog .post-subtitle {
-  font-size: 14px;
+  /*font-size: 14px;*/
   margin-top: 0;
-  margin-bottom: 25px;
+  /*margin-bottom: 25px;*/
   line-height: 1.5em;
 }
 #blog .year {
-  font-size: 18px;
+  /*font-size: 18px;*/
   position: relative;
   right: 100px;
   color: rgba(0, 0, 0, 0.5);
@@ -294,4 +295,8 @@ hr {
   body {
     margin: 0 7px;
   }
+}
+
+.conference {
+  color: #81313f;
 }
