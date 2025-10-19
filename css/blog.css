@@ -8,7 +8,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   /*background-color: #f8f5f0;*/
-  background-color:#FAF5EE  ;
+  background-color:#FFFEFB  ;
 }
 body {
   margin: 0;
@@ -19,6 +19,7 @@ body .content {
 a {
   /*color: rgba(0, 0, 0, 0.8);*/
   color: #425d78;
+  /*color: #4B3F66;*/
   text-decoration: none;
 }
 a:hover {
@@ -298,5 +299,11 @@ hr {
 }
 
 .conference {
-  color: #81313f;
+  /*color: #81313f;*/
+  color: #756332;
+
+}
+
+.email {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
