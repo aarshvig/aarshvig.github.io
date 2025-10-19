@@ -16,10 +16,12 @@ body .content {
   margin-bottom: 120px;
 }
 a {
-  color: rgba(0, 0, 0, 0.8);
+  /*color: rgba(0, 0, 0, 0.8);*/
+  color: #526f8a;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+    text-decoration: underline;
 }
 h1{font-family: Georgia, serif;},
 h2{font-family: Georgia, serif;},
@@ -186,7 +188,10 @@ font-family: Georgia, serif;
 }
 #blog .post-title a:hover {
   text-decoration: underline;
+  /*color: #536872;*/
+  color: #3f576b;
 }
+
 #blog .post-subtitle {
   font-size: 14px;
   margin-top: 0;
