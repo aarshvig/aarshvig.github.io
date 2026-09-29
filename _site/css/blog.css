@@ -186,6 +186,7 @@ h1 {
 
 .publication-title {
   color: #183B66;
+  font-weight: 700;
 }
 
 .author-link {
@@ -219,7 +220,7 @@ h1 {
 }
 
 .conference-short {
-  color: #756332;
+  color: #5E4F28;
   font-size: 0.95em;
   font-weight: 400;
 }
