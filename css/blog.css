@@ -1,100 +1,275 @@
+:root {
+  --bio-photo-width: 200px;
+  --bio-gap: 40px;
+}
+
 html {
   font-family: Georgia, serif;
-  /*color: rgba(0, 0, 0, 0.8);*/
-  color:#000000;
+  color: #000000;
   line-height: 1.5em;
   font-size: 16.22px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   background-color: #f8f5f0;
-  /*background-color:#C7BCAC;*/
 }
+
 body {
   margin: 0;
 }
+
 body .content {
   margin-bottom: 120px;
 }
+
 a {
-  /*color: rgba(0, 0, 0, 0.8);*/
-  color: #425d78;
-  /*color: #4B3F66;*/
+  color: #183B66;
   text-decoration: none;
 }
+
 a:hover {
-    text-decoration: underline;
+  color: #102A4C;
+  text-decoration: underline;
 }
-h1{font-family: Georgia, serif;},
-h2{font-family: Georgia, serif;},
-h3 {font-family: Georgia, serif;},
-h4{font-family: Georgia, serif;},
-h5{font-family: Georgia, serif;},
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   font-family: Georgia, serif;
 }
+
 h1 {
   line-height: 1.2em;
 }
+
 .clear {
   clear: both;
 }
+
 .hidden {
   display: none;
 }
+
 .wrap {
   max-width: 900px;
   margin: 0 auto;
 }
+
 .mono {
   font-family: monospace;
+  font-size: 0.9em;
+  background: rgba(24, 59, 102, 0.08);
+  border-radius: 4px;
+  padding: 0.08em 0.38em;
+  color: #102A4C;
 }
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
 .nav {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 14px;
+  margin-bottom: 24px;
 }
+
+.nav .wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-left: 14px;
+}
+
 .nav a {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   border-bottom: none;
   font-size: 15px;
 }
+
 .nav a:hover {
+  color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
+  text-decoration: none;
 }
-.nav ul {
-  list-style-type: none;
+
+
+/* =========================
+   TOP / BIO SECTION
+   ========================= */
+
+/* Center name over text column, excluding photo */
+.site-title {
+  width: calc(100% - var(--bio-photo-width) - var(--bio-gap));
+  text-align: left;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+:root {
+  --bio-photo-width: 190px;
+  --bio-gap: 40px;
+}
+
+/* Keep the rules close to the bio block */
+.bio-divider {
+  margin: 3px 0;
+}
+
+.bio-section {
+  display: flex;
+  align-items: center;
+  gap: var(--bio-gap);
   padding: 0;
+  margin: 0;
 }
-.nav ul li {
-  display: inline;
-  margin-right: 10px;
+
+.bio-text {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
 }
+
+/* Normal spacing BETWEEN biography paragraphs */
+.bio-text p {
+  margin-top: 0.55em;
+  margin-bottom: 0.55em;
+}
+
+/* No extra whitespace ABOVE the first sentence */
+.bio-text p:first-child {
+  margin-top: 0;
+}
+
+/* No extra whitespace BELOW the final sentence */
+.bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+.bio-photo {
+  width: var(--bio-photo-width);
+  height: auto;
+  flex-shrink: 0;
+}
+
+.contact-row {
+  margin-top: 0;
+}
+
+.contact-row p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   LINKS / PUBLICATIONS
+   ========================= */
+
+.publication-title {
+  color: #183B66;
+}
+
+.author-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.author-link:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.neutral-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.neutral-link:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.charcoal-link,
+.charcoal-link:hover {
+  color: #444444;
+}
+
+.conference-full {
+  color: #807C72;
+  font-size: 1em;
+}
+
+.conference-short {
+  color: #756332;
+  font-size: 0.95em;
+  font-weight: 400;
+}
+
+.spotlight {
+  color: #842F42;
+}
+
+
+/* =========================
+   FRONT MATTER
+   ========================= */
+
 .front-matter {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .front-matter h4 {
-font-family: Georgia, serif;}
+  font-family: Georgia, serif;
+}
+
 .front-matter .bylines .byline {
   margin-right: 20px;
   float: left;
 }
+
 .front-matter .bylines .byline o,
 .front-matter .bylines .byline p {
   margin: 0;
-font-family: Georgia, serif;
+  font-family: Georgia, serif;
 }
+
 .front-matter .bylines .byline h3 {
   font-size: 15px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .front-matter .bylines .byline p {
   font-size: 10px;
   line-height: 1.6em;
 }
+
+
+/* =========================
+   ARTICLES
+   ========================= */
+
 .article {
   font-size: 15px;
   line-height: 1.6em;
@@ -102,208 +277,285 @@ font-family: Georgia, serif;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .article blockquote {
   margin: 0;
   padding: 0 1em;
   color: #777;
   border-left: 0.25em solid #ddd;
 }
+
 .article h2 {
   font-size: 26px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 1rem;
   padding-top: 1em;
 }
+
 .article .figure {
   border-top: 1px solid hsla(0, 0%, 0%, 0.2);
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
   padding: 20px 0;
 }
+
 .article .figure .caption {
   padding-top: 15px;
   display: inline-block;
   font-size: 13px;
-  line-heigh: 1.2em;
+  line-height: 1.2em;
 }
+
 .article .figure .caption-label {
   font-weight: bold;
 }
+
 .article .footnote {
   line-height: 0;
 }
+
 .article div.highlight {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 13px;
   line-height: 1.3em;
 }
+
 .article ul {
   padding: 0 15px;
 }
+
 .article hr {
   border-bottom: none;
   border-top: 1px solid rgba(0, 0, 0, 0.7);
   margin: 33px auto;
   width: 70px;
 }
+
+
+/* =========================
+   BIBLIOGRAPHY
+   ========================= */
+
 #bibliography {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 #bibliography ol.bibliography {
   padding-left: 15px;
   padding-top: 30px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
 }
+
+
+/* =========================
+   BLOG
+   ========================= */
+
 #blog {
   margin-top: 80px;
   margin-bottom: 100px;
 }
+
 #blog #intro {
   font-size: 14px;
   font-style: italic;
   line-height: 1.4em;
   margin-bottom: 40px;
 }
+
 #blog .quote {
   margin-bottom: 30px;
 }
+
 #blog .quote p {
   margin-bottom: 5px;
 }
+
 #blog .post-date {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.7);
   font-size: 12px;
-  /*font-weight: bold;*/
   margin-top: 4px;
   margin-bottom: 4px;
 }
+
 #blog .post-title {
   display: inline-block;
-  /*font-weight: bold;*/
   margin-bottom: 0;
 }
+
 #blog .post-title a {
-  /*font-size: 18px;*/
   text-decoration: none;
 }
+
 #blog .post-title a:hover {
+  color: #102A4C;
   text-decoration: underline;
-  /*color: #536872;*/
-  color: #24313d;
 }
 
 #blog .post-subtitle {
-  /*font-size: 14px;*/
   margin-top: 0;
-  /*margin-bottom: 25px;*/
   line-height: 1.5em;
 }
+
 #blog .year {
-  /*font-size: 18px;*/
   position: relative;
   right: 100px;
   color: rgba(0, 0, 0, 0.5);
   width: 100px;
   margin-bottom: -24px;
 }
-#blog .theorem {
-display: block;
-font-style: italic;
+
+
+/* =========================
+   MATH / THEOREMS
+   ========================= */
+
+#blog .theorem,
+.theorem {
+  display: block;
+  font-style: italic;
 }
-#blog .theorem:before {
-content: "Theorem. ";
-font-weight: bold;
-font-style: normal;
+
+#blog .theorem:before,
+.theorem:before {
+  content: "Theorem. ";
+  font-weight: bold;
+  font-style: normal;
 }
-#blog .theorem[text]:before {
-content: "Theorem (" attr(text) ") ";
+
+#blog .theorem[text]:before,
+.theorem[text]:before {
+  content: "Theorem (" attr(text) ") ";
 }
 
 .lemma {
-display: block;
-font-style: italic;
+  display: block;
+  font-style: italic;
 }
+
 .lemma:before {
-content: "Lemma. ";
-font-weight: bold;
-font-style: normal;
+  content: "Lemma. ";
+  font-weight: bold;
+  font-style: normal;
 }
+
 .lemma[text]:before {
-content: "Lemma (" attr(text) ") ";
+  content: "Lemma (" attr(text) ") ";
 }
 
 .problem {
-display: block;
-font-style: italic;
+  display: block;
+  font-style: italic;
 }
+
 .problem:before {
-content: "Problem. ";
-font-weight: bold;
-font-style: normal;
+  content: "Problem. ";
+  font-weight: bold;
+  font-style: normal;
 }
+
 .problem[text]:before {
-content: "Problem (" attr(text) ") ";
+  content: "Problem (" attr(text) ") ";
 }
 
 .definition {
-display: block;
-font-style: italic;
+  display: block;
+  font-style: italic;
 }
+
 .definition:before {
-content: "Definition. ";
-font-weight: bold;
-font-style: normal;
+  content: "Definition. ";
+  font-weight: bold;
+  font-style: normal;
 }
+
 .definition[text]:before {
-content: "Definition (" attr(text) ") ";
-}
-.theorem {
-display: block;
-font-style: italic;
-}
-.theorem:before {
-content: "Theorem. ";
-font-weight: bold;
-font-style: normal;
-}
-.theorem[text]:before {
-content: "Theorem (" attr(text) ") ";
+  content: "Definition (" attr(text) ") ";
 }
 
 .proof {
-    display: block;
-    margin: 12px 0;
-    font-style: normal;
+  display: block;
+  margin: 12px 0;
+  font-style: normal;
 }
+
 .proof:before {
-    content: "Proof.";
-    font-style: italic;
+  content: "Proof.";
+  font-style: italic;
 }
+
 .proof:after {
-    content: "\25FC";
-    float:right;
+  content: "\25FC";
+  float: right;
 }
+
 #blog #y2017.year,
 #blog #y2018.year {
-  margin-top: 0px;
+  margin-top: 0;
 }
+
+
+/* =========================
+   MISC
+   ========================= */
+
 hr {
-  border-top: #ccc;
-}
-@media screen and (max-width: 700px) {
-  body {
-    margin: 0 7px;
-  }
+  border: 0;
+  border-top: 1px solid #ccc;
 }
 
 .conference {
-  /*color: #81313f;*/
   color: #756332;
-
 }
 
 .email {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media screen and (max-width: 700px) {
+  :root {
+    --bio-photo-width: 180px;
+    --bio-gap: 16px;
+  }
+
+  body {
+    margin: 0 7px;
+  }
+
+  .nav {
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .nav .wrap {
+    max-width: 100%;
+    justify-content: flex-end;
+  }
+
+  .nav ul li {
+    margin-left: 10px;
+  }
+
+  .site-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+  }
+
+  .bio-section {
+    flex-direction: column;
+    gap: var(--bio-gap);
+  }
+
+  .bio-photo {
+    width: var(--bio-photo-width);
+    align-self: center;
+  }
 }
